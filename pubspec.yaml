@@ -8,6 +8,8 @@ environment:
 
 
 dependencies:
+  animate_do: ^3.3.4
+  cupertino_icons: ^1.0.8
   flutter:
     sdk: flutter
   flutter_secure_storage: ^9.0.0
