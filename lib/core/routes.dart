@@ -1,5 +1,6 @@
 import 'package:go_router/go_router.dart';
 import 'package:mobilvizee/screens/core/error.dart';
+import 'package:mobilvizee/screens/core/loader.dart';
 import 'package:mobilvizee/screens/home.dart';
 import 'package:mobilvizee/screens/kullanici/login.dart';
 import 'package:mobilvizee/screens/kullanici/profile.dart';
@@ -14,6 +15,10 @@ final routes = GoRouter(
   routes: [
     GoRoute(
       path: '/',
+      builder: (context, state) => const LoaderScreen(),
+    ),
+    GoRoute(
+      path: '/home',
       builder: (context, state) => const HomeScreen(),
     ),
     GoRoute(

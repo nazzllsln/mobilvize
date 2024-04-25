@@ -19,11 +19,11 @@ class _ErrorScreenState extends State<ErrorScreen> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Text("404 - Not Found"),
-            Gap(20),
+            const Text("404 - Not Found"),
+            const Gap(20),
             IconButton(
-              onPressed: () => GoRouter.of(context).pop(),
-              icon: Icon(CupertinoIcons.chevron_back),
+              onPressed: () => GoRouter.of(context).canPop(),
+              icon: const Icon(CupertinoIcons.chevron_back),
             ),
           ],
         ),
