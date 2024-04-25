@@ -1,4 +1,4 @@
-import 'core/routes.dart';
+import 'package:mobilvizee/core/routes.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -10,10 +10,9 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
-      routes: [
-        
-      ],
+    return MaterialApp.router(
+      debugShowCheckedModeBanner: false,
+      routerConfig: routes,
     );
   }
 }
