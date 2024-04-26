@@ -6,9 +6,14 @@ class Storage {
 
     final runned = storage.getBool("runned");
 
+    var counter = storage.getInt("launchCount");
+
     if (runned == null) {
+      counter = 1;
+      await storage.setInt("launchCount", 1);
       return true;
     } else {
+      await storage.setInt("launchCount", counter! + 1);
       return false;
     }
   }

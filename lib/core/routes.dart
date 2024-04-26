@@ -8,6 +8,7 @@ import 'package:mobilvizee/screens/kullanici/register.dart';
 import 'package:mobilvizee/screens/product.dart/product.dart';
 import 'package:mobilvizee/screens/product.dart/search.dart';
 import 'package:mobilvizee/screens/static/about.dart';
+import 'package:mobilvizee/screens/static/boarding.dart';
 import 'package:mobilvizee/screens/static/contact.dart';
 
 final routes = GoRouter(
@@ -22,8 +23,12 @@ final routes = GoRouter(
       builder: (context, state) => const HomeScreen(),
     ),
     GoRoute(
+      path: '/boarding',
+      builder: (context, state) => BoardingScreen(),
+    ),
+    GoRoute(
       path: '/login',
-      builder: (context, state) => const LoginScreen(),
+      builder: (context, state) => LoginScreen(),
     ),
     GoRoute(
       path: '/profile',
