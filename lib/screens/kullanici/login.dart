@@ -15,36 +15,30 @@ class LoginScreen extends StatelessWidget {
           children: [
             Container(
               decoration: BoxDecoration(
-                color: Colors.grey[200], // Kutunun arkaplan rengi
-                borderRadius:
-                    BorderRadius.circular(20.0), // Oval şekilde kenarlar
+                color: Colors.grey[200],
+                borderRadius: BorderRadius.circular(20.0),
               ),
               child: TextField(
                 decoration: InputDecoration(
                   labelText: 'E-mail',
                   hintText: 'example@example.com',
-                  border: InputBorder.none, // Kutunun çerçevesini kaldırır
-                  contentPadding: EdgeInsets.symmetric(
-                      horizontal:
-                          20.0), // İçeriği yatay olarak sola doğru kaydırır
+                  border: InputBorder.none,
+                  contentPadding: EdgeInsets.symmetric(horizontal: 20.0),
                 ),
               ),
             ),
             SizedBox(height: 20.0),
             Container(
               decoration: BoxDecoration(
-                color: Colors.grey[200], // Kutunun arkaplan rengi
-                borderRadius:
-                    BorderRadius.circular(20.0), // Oval şekilde kenarlar
+                color: Colors.grey[200],
+                borderRadius: BorderRadius.circular(20.0),
               ),
               child: TextField(
                 obscureText: true,
                 decoration: InputDecoration(
                   labelText: 'Şifre',
-                  border: InputBorder.none, // Kutunun çerçevesini kaldırır
-                  contentPadding: EdgeInsets.symmetric(
-                      horizontal:
-                          20.0), // İçeriği yatay olarak sola doğru kaydırır
+                  border: InputBorder.none,
+                  contentPadding: EdgeInsets.symmetric(horizontal: 20.0),
                 ),
               ),
             ),
